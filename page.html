@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {background-color: rgb(186, 224, 81);}
+      table,th,td {border: 2px solid;}
+      input {margin-bottom: 20px;outline: none;}
+      table {display: none;width: 60%;margin: 20px auto;}
+      .validation {width: 450px;margin: 40px auto;}
+      span {font-size: small;margin-left: 10px;color: red;display: none;}
+      label {margin-right: 10px;}
+      label:last-of-type {margin-right: 21px;}
+      .name {width: 55%;}
+      .email {width: 40%;}
+      .age {width: 25%;}
+      </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="validation">
+      <label for="name">Name:</label>
+      <input type="text" name="name" /><span></span>
+      <br>
+      <label for="email">Email:</label>
+      <input type="email" name="email" /><span></span>
+      <br>
+      <label for="age">Age:</label>
+      <input type="text" name="age" /><span></span>
+      <br>
+      <button>Add</button>
+      <button>Reset</button>
+    </div>
+    <table border="2px" id="table">
+      <thead>
+        <th class="name">Name</th>
+        <th class="email">E-mail</th>
+        <th class="age">Age</th>
+      </thead>
+      <tbody id="tbody"></tbody>
+    </table>
+    <script src="script.js"></script>
+  </body>
+</html>
